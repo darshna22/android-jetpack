@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/graph_nav"
+            app:startDestination="@id/homeFragment">
+
+    <fragment android:id="@+id/homeFragment"
+              android:name="com.my.android_jetpak.fragment.HomeFragment"
+              android:label="Topics"
+              tools:layout="@layout/fragment_home"/>
+
+    <fragment android:id="@+id/feedbackFragment"
+              android:name="com.my.android_jetpak.fragment.FeedbackFragment"
+              android:label="Feedback"
+              tools:layout="@layout/fragment_javacode"/>
+
+    <fragment android:id="@+id/rateUsFragment"
+              android:name="com.my.android_jetpak.fragment.RateUsFragment"
+              android:label="Rate Us"
+              tools:layout="@layout/fragment_rate_us"/>
+
+    <fragment android:id="@+id/shareFragment"
+              android:name="com.my.android_jetpak.fragment.ShareFragment"
+              android:label="Share"
+              tools:layout="@layout/fragment_share"/>
+</navigation>

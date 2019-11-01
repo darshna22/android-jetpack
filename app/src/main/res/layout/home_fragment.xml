@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context="com.my.android_jetpak.fragment.NavHomeFragment">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/home"
+            android:textSize="@dimen/_30sdp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+    <TextView
+            android:id="@+id/viewSourceCodeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:textColor="@android:color/black"
+            android:text="@string/view_source_code"
+            android:textSize="@dimen/_20sdp" />
+
+</LinearLayout>

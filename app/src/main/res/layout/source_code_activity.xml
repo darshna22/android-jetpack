@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_play_bg"
+        android:orientation="vertical">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_3sdp"
+            android:background="@drawable/gradient_color">
+
+        <com.ogaclejapan.smarttablayout.SmartTabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:clipToPadding="false"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingRight="@dimen/_4sdp"
+                android:textAlignment="center"
+                app:stl_defaultTabTextColor="@android:color/white"
+                app:stl_defaultTabTextHorizontalPadding="@dimen/_36sdp"
+                app:stl_defaultTabTextSize="@dimen/_12sdp"
+                app:stl_dividerColor="@android:color/transparent"
+                app:stl_indicatorColor="@android:color/white"
+                app:stl_indicatorGravity="bottom"
+                app:stl_indicatorThickness="@dimen/_3sdp"
+                app:stl_indicatorInterpolation="smart"
+                app:stl_underlineThickness="0dp" />
+
+    </FrameLayout>
+
+
+    <!-- View pager to swipe views -->
+    <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" />
+</LinearLayout>

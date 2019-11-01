@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <!--        <item-->
+        <!--                android:id="@+id/homeFragment"-->
+        <!--                android:icon="@drawable/ic_menu_camera"-->
+        <!--                android:title="@string/menu_home" />-->
+        <!--        <item-->
+        <!--                android:id="@+id/feedbackFragment"-->
+        <!--                android:icon="@drawable/ic_menu_slideshow"-->
+        <!--                android:title="@string/menu_feedback"/>-->
+
+
+        <item
+                android:id="@+id/shareFragment"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+
+        <item
+                android:id="@+id/rateUsFragment"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/menu_rate_us" />
+
+        <item
+                android:id="@+id/websiteFragment"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/menu_rate_us" />
+    </group>
+
+    <!--    <item android:title="@string/communicate">-->
+
+    <!--        <menu>-->
+    <!--            <item-->
+    <!--                    android:id="@+id/shareFragment"-->
+    <!--                    android:icon="@drawable/ic_menu_share"-->
+    <!--                    android:title="@string/menu_share"/>-->
+    <!--        </menu>-->
+    <!--    </item>-->
+
+</menu>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        package="com.my.android_jetpak">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+            android:name="com.my.android_jetpak.utility.MyApp"
+            android:allowBackup="true"
+            android:icon="@drawable/app_icon_new"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/app_icon_new"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+        <activity
+                android:name="com.my.android_jetpak.activity.MainActivity"
+                android:label="@string/app_name"
+                android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".activity.MVVMActivity" />
+        <activity
+                android:name="com.my.android_jetpak.activity.SplashActivity"
+                android:label="@string/app_name"
+                android:theme="@style/AppThemeSplash">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.my.android_jetpak.activity.MainActivitySide" />
+        <activity android:name="com.my.android_jetpak.activity.DataBindingActivity" />
+        <activity android:name="com.my.android_jetpak.activity.MySourceCodeActivity" />
+        <activity android:name="com.my.android_jetpak.activity.TwoWayDataBinding" />
+        <activity android:name="com.my.android_jetpak.activity.BottomNavigationActivity" />
+        <activity android:name="com.my.android_jetpak.activity.RoomEventActivity" />
+
+        <service
+                android:name="com.my.android_jetpak.jobScheduler.MyEventJobService_"
+                android:exported="true"
+                android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+
+</manifest>
